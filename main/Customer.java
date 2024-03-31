@@ -1,11 +1,12 @@
 import java.util.Date;
 import java.util.ArrayList;
+import main.Items;
 
 public class Customer extends User {
     public String address;
     public String payment_method;
     public String[4] cards;
-    ArrayList<Itens> cart;
+    ArrayList<Items> cart;
 
 
     public Customer(String _address, String _payment_method, String _card) {
@@ -14,5 +15,6 @@ public class Customer extends User {
         this.payment_method = _payment_method;
         this.cards[0] = _card;
 	}
+
 
 }
