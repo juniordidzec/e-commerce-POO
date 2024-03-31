@@ -13,6 +13,10 @@ public class Sale_list {
 	}
 
     public buy_item(Items _item) {
-        _item.quantity.reduce_quantity();
+        if (_item.get_quantity > 0){
+            _item.quantity.reduce_quantity();
+        } else {
+            System.out.println("Sorry, this item is unavailable");
+        }
 	}
 }

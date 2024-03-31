@@ -8,4 +8,8 @@ public class Admin extends User {
 		super(_Name);
         this.permissions = _permissions;
 	}
+
+    public get_permissions(){
+        return this.permissions;
+    }
 }

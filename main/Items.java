@@ -26,4 +26,8 @@ public class Items {
     this.description = _description
     this.quantity = _quantity
   }
+
+  public get_quantity(){
+    return this.quantity;
+  }
 }
