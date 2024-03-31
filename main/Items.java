@@ -15,4 +15,15 @@ public class Items {
     this.description = _description
     this.quantity = _quantity
   }
+
+  public reduce_quantity(){
+    this.quantity = this.quantity - 1;
+  }
+
+  public edit_item(String _png, Float _price, String _description, int _quantity){
+    this.png = _png
+    this.price = _price
+    this.description = _description
+    this.quantity = _quantity
+  }
 }
