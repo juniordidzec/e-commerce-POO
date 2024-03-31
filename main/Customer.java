@@ -3,10 +3,10 @@ import java.util.ArrayList;
 import main.Items;
 
 public class Customer extends User {
-    public String address;
-    public String payment_method;
-    public String[4] cards;
-    ArrayList<Items> cart = new ArrayList<>();
+    private String address;
+    private String payment_method;
+    private String[4] cards;
+    private ArrayList<Items> cart = new ArrayList<>();
 
     public Customer(String _Name, String _address, String _payment_method, String _card) {
 		super(_Name);
