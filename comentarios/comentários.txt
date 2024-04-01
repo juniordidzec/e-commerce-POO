@@ -1,4 +1,5 @@
 
+
 Na classe Items temos o princípio de responsabilidade única sendo seguida(S) , a classe Items tem apenas uma única 
 responsabilidade que é representar um único item. 
 
@@ -8,5 +9,7 @@ para cada tipo de usuário, contendo apenas os métodos relevantes para aquele u
 Elas também seguem o princípio do aberto/fechado (O) pois a classe user possui saubclasses customer e admin, que foram
 criadas sem modificar a classe user existente.
 
-A classe base items segue o princípio da substituição de Liskov, pois todas as suas subclasses herdam e usam todos os métodos
-de sua classe. 
+A classe base items segue o princípio da substituição de Liskov(L), pois todas as suas subclasses herdam e usam todos os métodos de sua classe. 
+
+A Classe Sale_List segue o princípio da Inversão de Dependência (D), pois ela depende de uma interface SellItem que
+possui todos os métodos necessários para os tipos de item e fazemos a classe Items implementar esssa interface.
