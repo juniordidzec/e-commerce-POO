@@ -2,7 +2,7 @@ import java.util.Date;
 import java.util.ArrayList;
 import main.Items;
 
-public class Customer extends User {
+public class Customer extends User implements CustomerUser {
     private String address;
     private String payment_method;
     private String[4] cards;
