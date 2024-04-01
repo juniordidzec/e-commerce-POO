@@ -1,7 +1,7 @@
 import java.util.Date;
 import java.util.UUID;
 
-public class Items {
+public class Items implements SellItem {
 	private Integer ID;
   private String png;
   private Float price;
@@ -31,3 +31,8 @@ public class Items {
     return this.quantity;
   }
 }
+
+//Na classe Items temos o princípio de responsabilidade única sendo seguida(S) , a classe Items tem apenas uma única 
+//responsabilidade que é representar um único item. 
+
+//A classe base items segue o princípio da substituição de Liskov(L), pois todas as suas subclasses herdam e usam todos os métodos de sua classe. 

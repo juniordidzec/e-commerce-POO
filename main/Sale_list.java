@@ -20,3 +20,7 @@ public class Sale_list {
         }
 	}
 }
+
+
+//A Classe Sale_List segue o princípio da Inversão de Dependência (D), pois ela depende de uma interface SellItem que
+//possui todos os métodos necessários para os tipos de item e fazemos a classe Items implementar esssa interface

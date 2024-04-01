@@ -18,3 +18,9 @@ public class User {
         return this.Name;
     }
 }
+
+//Nas classes user, admin e customer seguimos o princípio de segregação de interfaces(I), temos a classer Admin e Customer 
+//que herdam da classe User, mas seus comportamentos são bastante diferentes. Para isso criamos interfaces específicas
+//para cada tipo de usuário, contendo apenas os métodos relevantes para aquele usuário. 
+//Elas também seguem o princípio do aberto/fechado (O) pois a classe user possui saubclasses customer e admin, que foram
+//criadas sem modificar a classe user existente.
